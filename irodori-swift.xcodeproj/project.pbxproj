@@ -16,6 +16,7 @@
 		C9388F121BD2C8D800818C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9388F101BD2C8D800818C63 /* LaunchScreen.storyboard */; };
 		C9388F1D1BD2C8D800818C63 /* irodori_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9388F1C1BD2C8D800818C63 /* irodori_swiftTests.swift */; };
 		C9388F281BD2C8D800818C63 /* irodori_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9388F271BD2C8D800818C63 /* irodori_swiftUITests.swift */; };
+		C9388F3A1BD2C9DD00818C63 /* GPUImageIrodoriFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9388F391BD2C9DD00818C63 /* GPUImageIrodoriFilter.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		C9388F271BD2C8D800818C63 /* irodori_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = irodori_swiftUITests.swift; sourceTree = "<group>"; };
 		C9388F291BD2C8D800818C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9388F351BD2C9A400818C63 /* irodori-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "irodori-swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9388F381BD2C9DD00818C63 /* GPUImageIrodoriFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageIrodoriFilter.h; sourceTree = "<group>"; };
+		C9388F391BD2C9DD00818C63 /* GPUImageIrodoriFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageIrodoriFilter.m; sourceTree = "<group>"; };
 		FBE467754DDD0441A9FDF8A3 /* libPods-irodori-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-irodori-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +119,8 @@
 		C9388F031BD2C8D800818C63 /* irodori-swift */ = {
 			isa = PBXGroup;
 			children = (
+				C9388F381BD2C9DD00818C63 /* GPUImageIrodoriFilter.h */,
+				C9388F391BD2C9DD00818C63 /* GPUImageIrodoriFilter.m */,
 				C9388F041BD2C8D800818C63 /* AppDelegate.swift */,
 				C9388F061BD2C8D800818C63 /* ViewController.swift */,
 				C9388F081BD2C8D800818C63 /* Main.storyboard */,
@@ -342,6 +347,7 @@
 				C9388F071BD2C8D800818C63 /* ViewController.swift in Sources */,
 				C9388F051BD2C8D800818C63 /* AppDelegate.swift in Sources */,
 				C9388F0D1BD2C8D800818C63 /* irodori_swift.xcdatamodeld in Sources */,
+				C9388F3A1BD2C9DD00818C63 /* GPUImageIrodoriFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
