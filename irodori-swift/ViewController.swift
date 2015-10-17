@@ -8,6 +8,8 @@
 
 import UIKit
 import GPUImage
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -27,6 +29,14 @@ class ViewController: UIViewController {
         
         let destinationImage = irodoriFilter.imageByFilteringImage(sourceImage)
         self.view.addSubview(UIImageView(image: destinationImage))
+        
+        Alamofire
+            .request(.GET, "http://irodori-server.dev/photos/red.json")
+            .validate()
+            .responseJSON { response in
+                let json = JSON(response.result.value!)
+                print(json[0]["user"]["name"])
+            }
     }
 
     override func didReceiveMemoryWarning() {
