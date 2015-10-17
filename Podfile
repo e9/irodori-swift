@@ -4,7 +4,7 @@
 # use_frameworks!
 
 target 'irodori-swift' do
-
+  pod "GPUImage"
 end
 
 target 'irodori-swiftTests' do
