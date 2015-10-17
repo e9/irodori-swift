@@ -52,6 +52,7 @@
 		C9388F231BD2C8D800818C63 /* irodori-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "irodori-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9388F271BD2C8D800818C63 /* irodori_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = irodori_swiftUITests.swift; sourceTree = "<group>"; };
 		C9388F291BD2C8D800818C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9388F351BD2C9A400818C63 /* irodori-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "irodori-swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		FBE467754DDD0441A9FDF8A3 /* libPods-irodori-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-irodori-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,6 +123,7 @@
 				C9388F101BD2C8D800818C63 /* LaunchScreen.storyboard */,
 				C9388F131BD2C8D800818C63 /* Info.plist */,
 				C9388F0B1BD2C8D800818C63 /* irodori_swift.xcdatamodeld */,
+				C9388F351BD2C9A400818C63 /* irodori-swift-Bridging-Header.h */,
 			);
 			path = "irodori-swift";
 			sourceTree = "<group>";
@@ -217,6 +219,7 @@
 		C9388EF91BD2C8D800818C63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = chabolab;
 				TargetAttributes = {
@@ -481,10 +484,13 @@
 			baseConfigurationReference = 705B70C1FEA5FE303EE38B5A /* Pods-irodori-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "irodori-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chabolab.irodori-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "irodori-swift/irodori-swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -493,10 +499,12 @@
 			baseConfigurationReference = 0C2F2FBEF6023535B323CAD3 /* Pods-irodori-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "irodori-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chabolab.irodori-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "irodori-swift/irodori-swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
