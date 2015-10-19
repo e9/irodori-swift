@@ -12,6 +12,8 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: UIViewController {
+    let imagePicture = GPUImagePicture(image: UIImage(named: "dummy"))
+    let stillCamera = GPUImageStillCamera()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,21 +26,15 @@ class ViewController: UIViewController {
         irodoriFilter.setHue(340.0, max: 365.0)
         irodoriFilter.setBr(0.4, max: 1.0)
         irodoriFilter.setSat(0.5, max: 1.0)
-        
-        #if (arch(i386) || arch(x86_64)) && os(iOS)
-            let stillCamera = GPUImagePicture(image: UIImage(named: "dummy"))
-        #else
-            let stillCamera = GPUImageStillCamera()
-            // stillCamera.outputImageOrientation = .Portrait
-            // stillCamera.shouldSmoothlyScaleOutput = true
-        #endif
-        
-        stillCamera.addTarget(irodoriFilter)
         irodoriFilter.addTarget(imageView)
         
         #if (arch(i386) || arch(x86_64)) && os(iOS)
-            stillCamera.processImage()
+            imagePicture.addTarget(irodoriFilter)
+            imagePicture.processImage()
         #else
+            stillCamera.outputImageOrientation = .Portrait
+            stillCamera.shouldSmoothlyScaleOutput = true
+            stillCamera.addTarget(irodoriFilter)
             stillCamera.startCameraCapture()
         #endif
         
