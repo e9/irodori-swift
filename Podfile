@@ -7,6 +7,8 @@ target 'irodori-swift' do
   pod "GPUImage"
   pod "Alamofire"
   pod "SwiftyJSON"
+  pod "FBSDKLoginKit"
+  pod "TwitterKit"
 end
 
 target 'irodori-swiftTests' do

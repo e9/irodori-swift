@@ -1,16 +1,41 @@
 PODS:
   - Alamofire (3.0.0)
+  - Bolts (1.6.0):
+    - Bolts/AppLinks (= 1.6.0)
+    - Bolts/Tasks (= 1.6.0)
+  - Bolts/AppLinks (1.6.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.6.0)
+  - Fabric (1.6.7)
+  - FBSDKCoreKit (4.10.1):
+    - Bolts (~> 1.5)
+  - FBSDKLoginKit (4.10.1):
+    - FBSDKCoreKit
   - GPUImage (0.1.7)
   - SwiftyJSON (2.3.0)
+  - TwitterCore (1.15.3):
+    - Fabric
+  - TwitterKit (1.15.3):
+    - TwitterCore (= 1.15.3)
 
 DEPENDENCIES:
   - Alamofire
+  - FBSDKLoginKit
   - GPUImage
   - SwiftyJSON
+  - TwitterKit
 
 SPEC CHECKSUMS:
   Alamofire: b61782387f81bcc538a0284cf2bb5d7995cd0a80
+  Bolts: f52a250053bb517ca874523c3913776359ab3def
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
+  FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
+  TwitterCore: cce24b3c798993ccde72787ea79ea9a478b284e4
+  TwitterKit: 43600f2d2848c227739efea5b2939585e69339c3
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 3e54e9c5866e1bce550d41c05126462ea6d894b4
+
+COCOAPODS: 1.0.0.beta.6
