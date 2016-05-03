@@ -9,6 +9,7 @@ target 'irodori-swift' do
   pod "SwiftyJSON"
   pod "FBSDKLoginKit"
   pod "TwitterKit"
+  pod "Crashlytics"
 end
 
 target 'irodori-swiftTests' do

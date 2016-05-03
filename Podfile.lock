@@ -6,6 +6,8 @@ PODS:
   - Bolts/AppLinks (1.6.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.6.0)
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
   - FBSDKCoreKit (4.10.1):
     - Bolts (~> 1.5)
@@ -20,6 +22,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Crashlytics
   - FBSDKLoginKit
   - GPUImage
   - SwiftyJSON
@@ -28,6 +31,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: b61782387f81bcc538a0284cf2bb5d7995cd0a80
   Bolts: f52a250053bb517ca874523c3913776359ab3def
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
   FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
@@ -36,6 +40,6 @@ SPEC CHECKSUMS:
   TwitterCore: cce24b3c798993ccde72787ea79ea9a478b284e4
   TwitterKit: 43600f2d2848c227739efea5b2939585e69339c3
 
-PODFILE CHECKSUM: 96f1dfef83ee0a8aeedce960e7aab1693c4d9b9a
+PODFILE CHECKSUM: d918e7cc12a3f5050ec21733863c6be9cd66dc3d
 
 COCOAPODS: 1.0.0.beta.6
