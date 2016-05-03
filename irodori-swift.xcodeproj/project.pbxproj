@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12BFC1B0D51C8589F2B3772F /* Pods_irodori_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372D75D494B18011B3312A32 /* Pods_irodori_swift.framework */; };
+		01C2B796AB8C89395CF28A55 /* Pods_irodori_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4AC9E4100060B1F3D077AD /* Pods_irodori_swiftTests.framework */; };
+		BA47DB5A1CD89D5800393FE9 /* SocialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47DB591CD89D5800393FE9 /* SocialLoginViewController.swift */; };
 		C9388F051BD2C8D800818C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9388F041BD2C8D800818C63 /* AppDelegate.swift */; };
 		C9388F071BD2C8D800818C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9388F061BD2C8D800818C63 /* ViewController.swift */; };
 		C9388F0A1BD2C8D800818C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9388F081BD2C8D800818C63 /* Main.storyboard */; };
@@ -16,7 +17,9 @@
 		C9388F121BD2C8D800818C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9388F101BD2C8D800818C63 /* LaunchScreen.storyboard */; };
 		C9388F1D1BD2C8D800818C63 /* irodori_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9388F1C1BD2C8D800818C63 /* irodori_swiftTests.swift */; };
 		C9388F281BD2C8D800818C63 /* irodori_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9388F271BD2C8D800818C63 /* irodori_swiftUITests.swift */; };
-		C9388F3A1BD2C9DD00818C63 /* GPUImageIrodoriFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9388F391BD2C9DD00818C63 /* GPUImageIrodoriFilter.m */; settings = {ASSET_TAGS = (); }; };
+		C9388F3A1BD2C9DD00818C63 /* GPUImageIrodoriFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9388F391BD2C9DD00818C63 /* GPUImageIrodoriFilter.m */; };
+		D12906FD946554C3E620463E /* Pods_irodori_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A1C63C429DC11E0ABAD41A /* Pods_irodori_swiftUITests.framework */; };
+		E2ECAC1CD1BB9E114D024226 /* Pods_irodori_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFEB9D766EAFBCD97597FA7 /* Pods_irodori_swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C2F2FBEF6023535B323CAD3 /* Pods-irodori-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swift/Pods-irodori-swift.release.xcconfig"; sourceTree = "<group>"; };
-		372D75D494B18011B3312A32 /* Pods_irodori_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_irodori_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		705B70C1FEA5FE303EE38B5A /* Pods-irodori-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swift/Pods-irodori-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		192933FA37EED1BBCFA40CF0 /* Pods-irodori-swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swiftUITests/Pods-irodori-swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38E788703C6845A975AB6282 /* Pods-irodori-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swiftTests/Pods-irodori-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4AC9E4100060B1F3D077AD /* Pods_irodori_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_irodori_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		731845CA650370163916655D /* Pods-irodori-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swift/Pods-irodori-swift.release.xcconfig"; sourceTree = "<group>"; };
+		81169F69325C5A892D652A42 /* Pods-irodori-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swift/Pods-irodori-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		86A1C63C429DC11E0ABAD41A /* Pods_irodori_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_irodori_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFEB9D766EAFBCD97597FA7 /* Pods_irodori_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_irodori_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCF07B4F15FC92FA79199B4 /* Pods-irodori-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swiftTests/Pods-irodori-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA47DB591CD89D5800393FE9 /* SocialLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginViewController.swift; sourceTree = "<group>"; };
+		C35ABB4D41DC6271A9DA53F4 /* Pods-irodori-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swiftUITests/Pods-irodori-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9388F011BD2C8D800818C63 /* irodori-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "irodori-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9388F041BD2C8D800818C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9388F061BD2C8D800818C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12BFC1B0D51C8589F2B3772F /* Pods_irodori_swift.framework in Frameworks */,
+				E2ECAC1CD1BB9E114D024226 /* Pods_irodori_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C2B796AB8C89395CF28A55 /* Pods_irodori_swiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,17 +90,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12906FD946554C3E620463E /* Pods_irodori_swiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		553A1961E880939BC8B58602 /* Pods */ = {
+		BEC04607FE2822AE2C05431A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				705B70C1FEA5FE303EE38B5A /* Pods-irodori-swift.debug.xcconfig */,
-				0C2F2FBEF6023535B323CAD3 /* Pods-irodori-swift.release.xcconfig */,
+				81169F69325C5A892D652A42 /* Pods-irodori-swift.debug.xcconfig */,
+				731845CA650370163916655D /* Pods-irodori-swift.release.xcconfig */,
+				38E788703C6845A975AB6282 /* Pods-irodori-swiftTests.debug.xcconfig */,
+				9CCF07B4F15FC92FA79199B4 /* Pods-irodori-swiftTests.release.xcconfig */,
+				C35ABB4D41DC6271A9DA53F4 /* Pods-irodori-swiftUITests.debug.xcconfig */,
+				192933FA37EED1BBCFA40CF0 /* Pods-irodori-swiftUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -101,8 +117,8 @@
 				C9388F1B1BD2C8D800818C63 /* irodori-swiftTests */,
 				C9388F261BD2C8D800818C63 /* irodori-swiftUITests */,
 				C9388F021BD2C8D800818C63 /* Products */,
-				553A1961E880939BC8B58602 /* Pods */,
-				D8DCE3E2B5C80BF78FC7F815 /* Frameworks */,
+				BEC04607FE2822AE2C05431A /* Pods */,
+				DC2EA8028D7B1D6DAA7F4BE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +145,7 @@
 				C9388F131BD2C8D800818C63 /* Info.plist */,
 				C9388F0B1BD2C8D800818C63 /* irodori_swift.xcdatamodeld */,
 				C9388F351BD2C9A400818C63 /* irodori-swift-Bridging-Header.h */,
+				BA47DB591CD89D5800393FE9 /* SocialLoginViewController.swift */,
 			);
 			path = "irodori-swift";
 			sourceTree = "<group>";
@@ -151,10 +168,12 @@
 			path = "irodori-swiftUITests";
 			sourceTree = "<group>";
 		};
-		D8DCE3E2B5C80BF78FC7F815 /* Frameworks */ = {
+		DC2EA8028D7B1D6DAA7F4BE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				372D75D494B18011B3312A32 /* Pods_irodori_swift.framework */,
+				8AFEB9D766EAFBCD97597FA7 /* Pods_irodori_swift.framework */,
+				6D4AC9E4100060B1F3D077AD /* Pods_irodori_swiftTests.framework */,
+				86A1C63C429DC11E0ABAD41A /* Pods_irodori_swiftUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,12 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9388F2C1BD2C8D800818C63 /* Build configuration list for PBXNativeTarget "irodori-swift" */;
 			buildPhases = (
-				7B2BB3CD188485D8C4746B23 /* Check Pods Manifest.lock */,
+				919962C672F80B180D23EBE1 /* 📦 Check Pods Manifest.lock */,
 				C9388EFD1BD2C8D800818C63 /* Sources */,
 				C9388EFE1BD2C8D800818C63 /* Frameworks */,
 				C9388EFF1BD2C8D800818C63 /* Resources */,
-				ED6BB78F7A12736E9BAD366E /* Embed Pods Frameworks */,
-				40F9538F0834F47DB4960A56 /* Copy Pods Resources */,
+				E5017BF11373D586A57D2CFA /* 📦 Embed Pods Frameworks */,
+				23C169937FF88804D019F72B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9388F2F1BD2C8D800818C63 /* Build configuration list for PBXNativeTarget "irodori-swiftTests" */;
 			buildPhases = (
+				DC611867C6002E3DBAA90B93 /* 📦 Check Pods Manifest.lock */,
 				C9388F141BD2C8D800818C63 /* Sources */,
 				C9388F151BD2C8D800818C63 /* Frameworks */,
 				C9388F161BD2C8D800818C63 /* Resources */,
+				7D516BD26F78E921D306A14C /* 📦 Embed Pods Frameworks */,
+				872320DAA8EA89F82D2795E9 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9388F321BD2C8D800818C63 /* Build configuration list for PBXNativeTarget "irodori-swiftUITests" */;
 			buildPhases = (
+				A8D907BD67099E1E6C921A13 /* 📦 Check Pods Manifest.lock */,
 				C9388F1F1BD2C8D800818C63 /* Sources */,
 				C9388F201BD2C8D800818C63 /* Frameworks */,
 				C9388F211BD2C8D800818C63 /* Resources */,
+				E9BAC9B3F24C63B10822ABEB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,14 +316,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		40F9538F0834F47DB4960A56 /* Copy Pods Resources */ = {
+		23C169937FF88804D019F72B /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,14 +331,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-irodori-swift/Pods-irodori-swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7B2BB3CD188485D8C4746B23 /* Check Pods Manifest.lock */ = {
+		7D516BD26F78E921D306A14C /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-irodori-swiftTests/Pods-irodori-swiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		872320DAA8EA89F82D2795E9 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-irodori-swiftTests/Pods-irodori-swiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		919962C672F80B180D23EBE1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,19 +376,64 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		ED6BB78F7A12736E9BAD366E /* Embed Pods Frameworks */ = {
+		A8D907BD67099E1E6C921A13 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC611867C6002E3DBAA90B93 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5017BF11373D586A57D2CFA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-irodori-swift/Pods-irodori-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9BAC9B3F24C63B10822ABEB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-irodori-swiftUITests/Pods-irodori-swiftUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -346,6 +445,7 @@
 			files = (
 				C9388F071BD2C8D800818C63 /* ViewController.swift in Sources */,
 				C9388F051BD2C8D800818C63 /* AppDelegate.swift in Sources */,
+				BA47DB5A1CD89D5800393FE9 /* SocialLoginViewController.swift in Sources */,
 				C9388F0D1BD2C8D800818C63 /* irodori_swift.xcdatamodeld in Sources */,
 				C9388F3A1BD2C9DD00818C63 /* GPUImageIrodoriFilter.m in Sources */,
 			);
@@ -487,10 +587,11 @@
 		};
 		C9388F2D1BD2C8D800818C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 705B70C1FEA5FE303EE38B5A /* Pods-irodori-swift.debug.xcconfig */;
+			baseConfigurationReference = 81169F69325C5A892D652A42 /* Pods-irodori-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FACEBOOK_APP_ID = 427831017262888;
 				INFOPLIST_FILE = "irodori-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chabolab.irodori-swift";
@@ -502,10 +603,11 @@
 		};
 		C9388F2E1BD2C8D800818C63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C2F2FBEF6023535B323CAD3 /* Pods-irodori-swift.release.xcconfig */;
+			baseConfigurationReference = 731845CA650370163916655D /* Pods-irodori-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FACEBOOK_APP_ID = 487337657944067;
 				INFOPLIST_FILE = "irodori-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chabolab.irodori-swift";
@@ -516,6 +618,7 @@
 		};
 		C9388F301BD2C8D800818C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E788703C6845A975AB6282 /* Pods-irodori-swiftTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "irodori-swiftTests/Info.plist";
@@ -528,6 +631,7 @@
 		};
 		C9388F311BD2C8D800818C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CCF07B4F15FC92FA79199B4 /* Pods-irodori-swiftTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "irodori-swiftTests/Info.plist";
@@ -540,6 +644,7 @@
 		};
 		C9388F331BD2C8D800818C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35ABB4D41DC6271A9DA53F4 /* Pods-irodori-swiftUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "irodori-swiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -552,6 +657,7 @@
 		};
 		C9388F341BD2C8D800818C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 192933FA37EED1BBCFA40CF0 /* Pods-irodori-swiftUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "irodori-swiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
