@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import FBSDKCoreKit
+import Fabric
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // https://developers.facebook.com/docs/ios/getting-started#delegate
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 
+        let twitter_api_key = NSBundle.mainBundle().objectForInfoDictionaryKey("TwitterApiKey") as! String
+        let twitter_api_secret = NSBundle.mainBundle().objectForInfoDictionaryKey("TwitterApiSecret") as! String
+        Twitter.sharedInstance().startWithConsumerKey(twitter_api_key, consumerSecret: twitter_api_secret)
+        Fabric.with([Twitter.self])
+        
         return true
     }
     

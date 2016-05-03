@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKLoginKit
+import TwitterKit
 
 class SocialLoginViewController: UIViewController {
     let button_fb = UIButton()
@@ -77,8 +78,17 @@ class SocialLoginViewController: UIViewController {
                     
                 }
             })
-        case BtnTag.Twitter: break
-            
+        case BtnTag.Twitter:
+            Twitter.sharedInstance().logInWithCompletion { (session, error) -> Void in
+                
+                if session != nil {
+                    // Here you have a valid session you can use.
+                    print(session!.userID)
+                    print(session!.userName)
+                    print(session!.authToken)
+                    print(session!.authTokenSecret)
+                }
+            }
         }
     }
     
