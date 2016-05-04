@@ -9,6 +9,10 @@
 import UIKit
 
 import CoreData
+import FBSDKCoreKit
+import Fabric
+import Crashlytics
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +22,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
+        // Facebook
+        // https://developers.facebook.com/docs/ios/getting-started#delegate
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+
+        let twitter_api_key = NSBundle.mainBundle().objectForInfoDictionaryKey("TwitterApiKey") as! String
+        let twitter_api_secret = NSBundle.mainBundle().objectForInfoDictionaryKey("TwitterApiSecret") as! String
+        Twitter.sharedInstance().startWithConsumerKey(twitter_api_key, consumerSecret: twitter_api_secret)
+        Fabric.with([Twitter.self, Crashlytics.self])
+        
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        // Facebook
+        // https://developers.facebook.com/docs/ios/getting-started#delegate
+        let handled = FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+        // Add any custom logic here.
+        return handled
     }
 
     func applicationWillResignActive(application: UIApplication) {
