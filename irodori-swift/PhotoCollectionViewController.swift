@@ -11,7 +11,7 @@ import UIKit
 class PhotoCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 
     //define maxImagesize per one image
-    private let maxCellsize:CGFloat = 120.0
+    private let maxCellsize:CGFloat = 200.0
     private let reuseIdentifier = "Cell"
 
     
@@ -73,6 +73,7 @@ class PhotoCollectionViewController: UICollectionViewController,UICollectionView
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return 40
+        //temp c
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

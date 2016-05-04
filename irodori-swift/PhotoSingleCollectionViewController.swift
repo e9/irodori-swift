@@ -17,6 +17,7 @@ class PhotoSingleCollectionViewController: PhotoCollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
 
@@ -96,7 +97,6 @@ class PhotoSingleCollectionViewController: PhotoCollectionViewController {
 
             
         }else{ // when landscape
-            
             // make square on left
             let constraint=NSLayoutConstraint(item: imageviewCell, attribute:NSLayoutAttribute.Height , relatedBy: NSLayoutRelation.Equal, toItem: cell, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0)
             constraint.identifier="added";

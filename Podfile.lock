@@ -1,24 +1,24 @@
 PODS:
   - Alamofire (3.3.1)
-  - Bolts (1.6.0):
-    - Bolts/AppLinks (= 1.6.0)
-    - Bolts/Tasks (= 1.6.0)
-  - Bolts/AppLinks (1.6.0):
+  - Bolts (1.7.0):
+    - Bolts/AppLinks (= 1.7.0)
+    - Bolts/Tasks (= 1.7.0)
+  - Bolts/AppLinks (1.7.0):
     - Bolts/Tasks
-  - Bolts/Tasks (1.6.0)
+  - Bolts/Tasks (1.7.0)
   - Crashlytics (3.7.0):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
-  - FBSDKCoreKit (4.10.1):
-    - Bolts (~> 1.5)
-  - FBSDKLoginKit (4.10.1):
+  - FBSDKCoreKit (4.11.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.11.0):
     - FBSDKCoreKit
   - GPUImage (0.1.7)
   - SwiftyJSON (2.3.2)
-  - TwitterCore (1.15.3):
+  - TwitterCore (2.0.2):
     - Fabric
-  - TwitterKit (1.15.3):
-    - TwitterCore (= 1.15.3)
+  - TwitterKit (2.0.2):
+    - TwitterCore (= 2.0.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -30,16 +30,16 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
-  Bolts: f52a250053bb517ca874523c3913776359ab3def
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
-  FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
-  FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
+  FBSDKCoreKit: 686ac982723a14ec9ddb85e2f81235d7706c891b
+  FBSDKLoginKit: bade9fc78277764149ccc5bfaadbf13c83175c6a
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
-  TwitterCore: cce24b3c798993ccde72787ea79ea9a478b284e4
-  TwitterKit: 43600f2d2848c227739efea5b2939585e69339c3
+  TwitterCore: 0f44d8980a6879d5205dcb4e010d15e643e56fa0
+  TwitterKit: c4e40f289a3d7cc9fab9f241edd7502385468b65
 
-PODFILE CHECKSUM: 896a95522102d443324e9cff997586bc0e5f21e8
+PODFILE CHECKSUM: d918e7cc12a3f5050ec21733863c6be9cd66dc3d
 
 COCOAPODS: 1.0.0.rc.1

@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		01C2B796AB8C89395CF28A55 /* Pods_irodori_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4AC9E4100060B1F3D077AD /* Pods_irodori_swiftTests.framework */; };
+		A7D0EF1E1CDA28D700234B18 /* PhotoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0EF1D1CDA28D700234B18 /* PhotoEditViewController.swift */; };
+		A7D0EF1F1CDA5D9D00234B18 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95A2CA1CD9E74D007795A9 /* PhotoCollectionViewController.swift */; };
+		A7D0EF201CDA5DA100234B18 /* PhotoSingleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95A2CB1CD9E74D007795A9 /* PhotoSingleCollectionViewController.swift */; };
 		BA47DB5A1CD89D5800393FE9 /* SocialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47DB591CD89D5800393FE9 /* SocialLoginViewController.swift */; };
-		BA95A2CC1CD9E74D007795A9 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95A2CA1CD9E74D007795A9 /* PhotoCollectionViewController.swift */; };
-		BA95A2CD1CD9E74D007795A9 /* PhotoSingleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95A2CB1CD9E74D007795A9 /* PhotoSingleCollectionViewController.swift */; };
 		C9388F051BD2C8D800818C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9388F041BD2C8D800818C63 /* AppDelegate.swift */; };
-		C9388F071BD2C8D800818C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9388F061BD2C8D800818C63 /* ViewController.swift */; };
+		C9388F071BD2C8D800818C63 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9388F061BD2C8D800818C63 /* TakePhotoViewController.swift */; };
 		C9388F0A1BD2C8D800818C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9388F081BD2C8D800818C63 /* Main.storyboard */; };
 		C9388F0D1BD2C8D800818C63 /* irodori_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9388F0B1BD2C8D800818C63 /* irodori_swift.xcdatamodeld */; };
 		C9388F0F1BD2C8D800818C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9388F0E1BD2C8D800818C63 /* Assets.xcassets */; };
@@ -50,13 +51,14 @@
 		86A1C63C429DC11E0ABAD41A /* Pods_irodori_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_irodori_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFEB9D766EAFBCD97597FA7 /* Pods_irodori_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_irodori_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCF07B4F15FC92FA79199B4 /* Pods-irodori-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swiftTests/Pods-irodori-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7D0EF1D1CDA28D700234B18 /* PhotoEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoEditViewController.swift; sourceTree = "<group>"; };
 		BA47DB591CD89D5800393FE9 /* SocialLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginViewController.swift; sourceTree = "<group>"; };
 		BA95A2CA1CD9E74D007795A9 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		BA95A2CB1CD9E74D007795A9 /* PhotoSingleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSingleCollectionViewController.swift; sourceTree = "<group>"; };
 		C35ABB4D41DC6271A9DA53F4 /* Pods-irodori-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-irodori-swiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-irodori-swiftUITests/Pods-irodori-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9388F011BD2C8D800818C63 /* irodori-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "irodori-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9388F041BD2C8D800818C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9388F061BD2C8D800818C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9388F061BD2C8D800818C63 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		C9388F091BD2C8D800818C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9388F0C1BD2C8D800818C63 /* irodori_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = irodori_swift.xcdatamodel; sourceTree = "<group>"; };
 		C9388F0E1BD2C8D800818C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,7 +144,8 @@
 				C9388F381BD2C9DD00818C63 /* GPUImageIrodoriFilter.h */,
 				C9388F391BD2C9DD00818C63 /* GPUImageIrodoriFilter.m */,
 				C9388F041BD2C8D800818C63 /* AppDelegate.swift */,
-				C9388F061BD2C8D800818C63 /* ViewController.swift */,
+				C9388F061BD2C8D800818C63 /* TakePhotoViewController.swift */,
+				A7D0EF1D1CDA28D700234B18 /* PhotoEditViewController.swift */,
 				C9388F081BD2C8D800818C63 /* Main.storyboard */,
 				C9388F0E1BD2C8D800818C63 /* Assets.xcassets */,
 				C9388F101BD2C8D800818C63 /* LaunchScreen.storyboard */,
@@ -261,7 +264,7 @@
 				TargetAttributes = {
 					C9388F001BD2C8D800818C63 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 2M3Z75H5HZ;
+						DevelopmentTeam = M7NNTKHBVW;
 					};
 					C9388F171BD2C8D800818C63 = {
 						CreatedOnToolsVersion = 7.0;
@@ -463,13 +466,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA95A2CD1CD9E74D007795A9 /* PhotoSingleCollectionViewController.swift in Sources */,
-				C9388F071BD2C8D800818C63 /* ViewController.swift in Sources */,
-				BA95A2CC1CD9E74D007795A9 /* PhotoCollectionViewController.swift in Sources */,
+				A7D0EF201CDA5DA100234B18 /* PhotoSingleCollectionViewController.swift in Sources */,
+				A7D0EF1F1CDA5D9D00234B18 /* PhotoCollectionViewController.swift in Sources */,
+				C9388F071BD2C8D800818C63 /* TakePhotoViewController.swift in Sources */,
 				C9388F051BD2C8D800818C63 /* AppDelegate.swift in Sources */,
 				BA47DB5A1CD89D5800393FE9 /* SocialLoginViewController.swift in Sources */,
 				C9388F0D1BD2C8D800818C63 /* irodori_swift.xcdatamodeld in Sources */,
 				C9388F3A1BD2C9DD00818C63 /* GPUImageIrodoriFilter.m in Sources */,
+				A7D0EF1E1CDA28D700234B18 /* PhotoEditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +617,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FACEBOOK_APP_ID = 427831017262888;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -622,6 +629,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chabolab.irodori-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "irodori-swift/irodori-swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TWITTER_API_KEY = vNwDuTCedOZNfEhAQVtQ;
@@ -635,6 +643,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FACEBOOK_APP_ID = 487337657944067;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -644,6 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chabolab.irodori-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "irodori-swift/irodori-swift-Bridging-Header.h";
 				TWITTER_API_KEY = uBjYZD2q8Iw8IX4gAE28w;
 				TWITTER_API_SECRET = KpDEVNM43TqcXB39tCOaEJvNGnh1OjF10j12sAuRUg;
