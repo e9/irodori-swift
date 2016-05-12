@@ -34,9 +34,9 @@ class PhotoEditViewController: UIViewController {
         super.viewDidAppear(animated);
         print("view did appear");
 
-        if let gpuImagewpd = gpuImage {
-            gpuImagewpd.addTarget(editImageView);
-            gpuImagewpd.processImage();
+        if let gpuImageUnwrapped = gpuImage {
+            gpuImageUnwrapped.addTarget(editImageView);
+            gpuImageUnwrapped.processImage();
         }
         
 

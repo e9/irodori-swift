@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VOV-l9-nlr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -30,16 +30,27 @@
                                 <rect key="frame" x="20" y="600" width="600" height="0.0"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ma-K0-64H">
-                                        <rect key="frame" x="285" y="-15" width="30" height="30"/>
+                                        <rect key="frame" x="285" y="-14.5" width="30" height="30"/>
                                         <state key="normal" title="O"/>
                                         <connections>
                                             <action selector="shutterTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GX8-nk-7Ul"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzz-1a-JnT">
+                                        <rect key="frame" x="366" y="-15" width="30" height="30"/>
+                                        <state key="normal" title="R"/>
+                                        <connections>
+                                            <action selector="touchRetake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ory-sm-8vW"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="6ma-K0-64H" firstAttribute="centerY" secondItem="jp3-Sf-ejR" secondAttribute="centerY" id="DdE-0e-uhL"/>
+                                    <constraint firstItem="nzz-1a-JnT" firstAttribute="height" secondItem="6ma-K0-64H" secondAttribute="height" id="Ha1-8a-a8J"/>
+                                    <constraint firstItem="nzz-1a-JnT" firstAttribute="top" secondItem="6ma-K0-64H" secondAttribute="top" id="MQ0-QK-xrT"/>
+                                    <constraint firstItem="nzz-1a-JnT" firstAttribute="leading" secondItem="6ma-K0-64H" secondAttribute="trailing" constant="51" id="YNe-p0-SRB"/>
+                                    <constraint firstItem="nzz-1a-JnT" firstAttribute="width" secondItem="6ma-K0-64H" secondAttribute="width" id="pAO-1o-FGn"/>
                                     <constraint firstItem="6ma-K0-64H" firstAttribute="centerX" secondItem="jp3-Sf-ejR" secondAttribute="centerX" id="s8t-d2-Gjw"/>
                                 </constraints>
                             </view>
@@ -59,6 +70,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="O4S-Fh-VR2" id="o0b-Zz-HiY"/>
+                        <outlet property="retakePhotoButton" destination="nzz-1a-JnT" id="Ac1-Zk-l9N"/>
+                        <outlet property="takePhotoButton" destination="6ma-K0-64H" id="JqT-Fg-qD3"/>
                         <segue destination="szf-67-uxW" kind="show" identifier="takePhoto" id="Ny0-3z-PaZ"/>
                     </connections>
                 </viewController>

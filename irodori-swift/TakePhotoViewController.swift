@@ -11,14 +11,32 @@ import GPUImage
 import Alamofire
 import SwiftyJSON
 
+
+
+
 class TakePhotoViewController: UIViewController {
-    @IBOutlet var imageView: GPUImageView!
     let imagePicture = GPUImagePicture(image: UIImage(named: "dummy"))
     let stillCamera = GPUImageStillCamera();
-    
-    let cropFilter = GPUImageCropFilter(cropRegion: CGRectMake(0, 0, 1, 0.75));
+    let cropFilter = GPUImageCropFilter(cropRegion: CGRectMake(0, 0, 1, 0.75))
     let irodoriFilter = GPUImageIrodoriFilter()
+    
+    @IBOutlet weak var retakePhotoButton: UIButton!
+    @IBOutlet weak var takePhotoButton: UIButton!
+    @IBOutlet weak var imageView: GPUImageView!
 
+    
+    var isPhotoTaken:Bool = false {
+        didSet{
+            if isPhotoTaken {
+                retakePhotoButton.enabled = true
+                takePhotoButton.enabled = false
+            }else{
+                retakePhotoButton.enabled = false
+                takePhotoButton.enabled = true
+            }
+        }
+        
+    }
     
 
 
@@ -26,6 +44,60 @@ class TakePhotoViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        startCamera();
+        /*
+        Alamofire
+            .request(.GET, "http://irodori-server.dev/photos/red.json")
+            .validate()
+            .responseJSON { response in
+                let json = JSON(response.result.value!)
+                print(json[0]["user"]["name"])
+            }
+        */
+    }
+    
+
+
+    @IBAction func shutterTouchUpInside(sender: AnyObject) {
+        
+        if isPhotoTaken==false {
+            
+            stillCamera.capturePhotoAsImageProcessedUpToFilter(irodoriFilter) { (image, error) in
+            print("takephoto");
+            
+            self.suspendCamera()
+            self.isPhotoTaken = true
+
+        }
+        }else{
+            
+        }
+        
+
+        
+    }
+    @IBAction func touchRetake(sender: AnyObject) {
+        self.isPhotoTaken = false
+        self.resumeCamera()
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "takePhoto"{
+            print("segue prapare");
+            let nextViewController:PhotoEditViewController = segue.destinationViewController as! PhotoEditViewController;
+            nextViewController.gpuImage = sender as? GPUImagePicture;
+        }
+    }
+
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func startCamera(){
         irodoriFilter.setHue(340.0, max: 365.0)
         irodoriFilter.setBr(0.4, max: 1.0)
         irodoriFilter.setSat(0.5, max: 1.0)
@@ -44,51 +116,26 @@ class TakePhotoViewController: UIViewController {
             stillCamera.startCameraCapture();
         #endif
         
-        /*
-        Alamofire
-            .request(.GET, "http://irodori-server.dev/photos/red.json")
-            .validate()
-            .responseJSON { response in
-                let json = JSON(response.result.value!)
-                print(json[0]["user"]["name"])
-            }
-        */
     }
     
-
-
-    @IBAction func shutterTouchUpInside(sender: AnyObject) {
-        stillCamera.capturePhotoAsImageProcessedUpToFilter(irodoriFilter) { (image, error) in
-            print("takephoto");
-            print("segue start");
-            
-            self.stillCamera.stopCameraCapture();
-            self.stillCamera.removeAllTargets();
-            self.stillCamera.removeInputsAndOutputs();
-            self.imageView.endProcessing();
-            
-            let delegateImage = GPUImagePicture(image: image);
-            self.performSegueWithIdentifier("takePhoto", sender: delegateImage);
-
-        }
-        
-
+    func suspendCamera(){
+        stillCamera.stopCameraCapture();
+    }
+    
+    func resumeCamera(){
+        stillCamera.startCameraCapture();
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "takePhoto"{
-            print("segue prapare");
-            let nextViewController:PhotoEditViewController = segue.destinationViewController as! PhotoEditViewController;
-            nextViewController.gpuImage = sender as? GPUImagePicture;
-        }
+    func stopCamera(){
+        stillCamera.stopCameraCapture();
+        stillCamera.removeAllTargets();
+        stillCamera.removeInputsAndOutputs();
+        imageView.endProcessing();
+        
     }
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
 
 
 }
